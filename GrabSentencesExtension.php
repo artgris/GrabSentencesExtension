@@ -16,6 +16,7 @@ class GrabSentencesExtension extends \Twig_Extension
 	public function grabSentencesFilter($text, $size = 1)
 	{
 		preg_match_all("/[A-Z].*?[\.!?…](?:\s|$)/", $text, $matches);
+		
 		return implode('', array_slice($matches[0], 0, $size));
 
 	}
