@@ -9,7 +9,7 @@ class GrabSentencesExtension extends \Twig_Extension
 	public function getFilters()
 	{
 		return array(
-			new \Twig_SimpleFilter('grab_sentences', [$this, 'grabSentencesFilter']),
+			new \Twig_SimpleFilter('grab_sentences', array($this, 'grabSentencesFilter')),
 		);
 	}
 
