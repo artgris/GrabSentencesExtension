@@ -1,7 +1,18 @@
 # GrabSentencesExtension
 Twig extension to grab sentences from text
 
-## Usage
+Installation
+============
+
+    # services.yml         
+    services:
+        grab_sentence_extension:
+            class: AppBundle\Twig\GrabSentencesExtension
+            tags:
+                - { name: twig.extension }
+
+Usage
+=====
 
 text = *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus scelerisque bibendum. Duis sodales finibus quam, vel accumsan odio lacinia eget. Vestibulum convallis porttitor fringilla.*
 
