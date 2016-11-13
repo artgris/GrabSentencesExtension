@@ -3,6 +3,11 @@
 namespace AppBundle\Twig;
 
 
+/**
+ * Twig extension to grab sentences from text
+ *
+ * @author Arthur Gribet <a.gribet@gmail.com>
+ */
 class GrabSentencesExtension extends \Twig_Extension
 {
 
