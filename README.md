@@ -11,6 +11,9 @@ Installation
             tags:
                 - { name: twig.extension }
 
+
+Move GrabSentencesExtension.php in AppBundle\Twig
+
 Usage
 =====
 
@@ -19,4 +22,4 @@ text = *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus
 
     {{ text|grab_sentences }} #Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-    {{ text|grab_sentences(3) }} #Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus scelerisque bibendum. Duis sodales finibus quam, vel accumsan odio lacinia eget.
+    {{ text|grab_sentences(3) }} #Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus scelerisque bibendum... Duis sodales finibus quam, vel accumsan odio lacinia eget!
