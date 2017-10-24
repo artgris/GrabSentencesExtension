@@ -4,12 +4,14 @@ Twig extension to grab sentences from text
 Installation
 ============
 
-    # services.yml         
-    services:
-        grab_sentence_extension:
-            class: AppBundle\Twig\GrabSentencesExtension
-            tags:
-                - { name: twig.extension }
+```yml 
+# services.yml         
+services:
+    grab_sentence_extension:
+        class: AppBundle\Twig\GrabSentencesExtension
+        tags:
+            - { name: twig.extension }
+```
 
 
 Move GrabSentencesExtension.php in AppBundle\Twig
